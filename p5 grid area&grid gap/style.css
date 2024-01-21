@@ -1,0 +1,63 @@
+/* grid area & grid gap = properti untuk parent atau display grid nya */
+/* grid-templete-areas */
+/* grid-templete (shorthand) */
+/* grid-column-gap */
+/* grid-gap */
+/* grid (shorthand) */
+
+/* Latihan 1 */
+/* grid-area = mendefinisikan value untuk element / item pada grid, contoh =
+.item{
+    grid-area: header;
+}
+memberikan class item sebagai header di grid-templete-area
+bukan untuk parent, tapi untuk itemnya / isi parent nya
+*
+
+/* grid-templete-areas = untuk menentukan posisi, yang didefinisikan oleh properti grid-area, contoh = 
+.container {
+    grid-templete-area: "header header"
+                        "footer footer"
+}
+jadi baris pertama akan di beri header, dan baris kedua akan jadi footer
+value yang boleh di berikan = namaarea, none, '.';
+syarat : harus berbentuk kotak / persegi tidak boleh berbentuk L, dll
+*/
+
+
+/* Latihan 2 */
+/* grid-templete = shorthand dari =
+grid-templete-rows, grid-templete-areas, grid-templete-columns */
+/* contonya : 
+grid-template:
+    [baris1-mulai] "header header header" 50px [baris1-akhir]
+    [baris2-mulai] "footer footer footer" 50px [baris2-akhir]
+    / 1fr 2fr 3fr;
+artinya baris1mulai-barisakhir isinya header semua, besar barisnya(rows) = 50px 
+dan baris2mulai-baris2akhir isinya footer semua, besar barisnya(rows) = 5o0px
+dan setiap columns diisi berurut dengan nilai 1fr 2fr 3fr;
+jika tanpa grid-templete-areas, maka codenya =
+grid-templete: 50px 50px / 1fr 2fr 3fr
+*/
+
+
+/* Latihan 3 */
+/* row-gap & column-gap untuk menambahkan jarak baris dan kolom pada setiap grid track, contoh = 
+column-gap: 30px;
+row-gap: 20px;
+ */
+
+/* gap = jarak pergabungan baris dan kolom secara bersamaan, contoh =
+jika ingin baris dan kolom jaraknya sama hanya gunakan =
+gap: 50px;
+jika ingin baris dan kolom jaraknya berbeda gunakan =
+gap: 20px 30px;
+urutan valuenya :
+gap: row-gap column-gap;
+*/
+
+
+/* Tambahan */
+/* grid = shorthand terlengkap, terdiri dari = */
+/* grid-templete-rows, grid-templete-columns, grid-templete-areas, 
+grid-auto-rows, grid-auto-columns, grid-auto-flow */

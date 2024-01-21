@@ -1,0 +1,53 @@
+/* grid alignment = properti untuk parent atau display grid nya */
+/* grid alignment terdiri dari = */
+/* justify-items */
+/* align-items */
+/* place-items */
+/* justify-content */
+/* align-content */
+/* place-content */
+
+/* 1. justify-items = mensejajarkan grid-item pada sumbu horizontal, valuenya =
+justify-content: start, end, center, stretch;
+stretch = defaultnya(menyeluruh secara horizontal, jika ada properti width maka posisinya akan seperti start), 
+start = kekiri, end = kekanan, center = ditengah */
+
+/* 2. align-items = mensejajarkan grid-item pada sumbu vertikal, valuenya =
+align-content: start, end, center, stretch;
+stretch = defaultnya(menyeluruh secara vertikal, jika ada properti height maka posisinya akan seperti start), 
+start = keatas, end = kebawah, center = ditengah */
+
+/* 3. place-items = shorthand untuk align-items dan justify-items secara bersamaan, valuenya = 
+place-items: alignitems justifyitems, contoh =
+place-items: center end;
+align-itemsnya = center, dan justify-content = end;
+dan jika valuenya sama maka tulis 1 value saja, contoh = 
+place-items: center; */
+
+/* 4. justify-content = mengatur seluruh grid container pada sumbu horizontal.
+ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran containernya, 
+biasanya ketika grid items nya menggunakan ukuran yang fixed (px) 
+value justify-content: start, end, center, stretch, space-around, space-between, space-evenly 
+start = seluruh gridnya kekiri, end = seluruh gridnya kekanan, center = seluruh gridnya ketengah,
+stretch = seluruh grid penuh secara horizontal(jika ukuran grid nya tidak fixed / tidak menggunakan ukuran), 
+space-between = memberi jarak yang sama, tetapi akan mentok di start dan end secara horizontal 
+space-around = memberi jarak yang sama, tetapi element di tengah akan terpisah jaraknya, dengan jarak element sebelahnya 
+space-evenly = memberi jarak yang benar benar sama, tanpa ada perbedaan 2 jarak element
+*/
+
+/* 5. align-content = mengatur seluruh grid container pada sumbu vertikal.
+syaratnya sama seperti justify-content
+value justify-content: start, end, center, stretch, space-around, space-between, space-evenly 
+start = seluruh gridnya keatas, end = seluruh gridnya kebawah, center = seluruh gridnya ketengah,
+stretch = seluruh grid penuh secara vertikal(jika ukuran grid nya tidak fixed / tidak menggunakan ukuran), 
+space-between = memberi jarak yang sama, tetapi akan mentok di start dan end secara vertikal 
+space-around = memberi jarak yang sama, tetapi element di tengah akan terpisah jaraknya, dengan jarak element sebelahnya 
+space-evenly = memberi jarak yang benar benar sama, tanpa ada perbedaan 2 jarak element
+*/
+
+/* 6. place-content = shorthand untuk justify-content dan align-content secara bersamaan, valuenya = 
+place-content: justify-content align-content, contoh =
+place-content: space-between center;
+justify-contentnya = space-between, dan align-content = center;
+dan jika valuenya sama maka tulis 1 value saja, contoh = 
+place-content: space-evenly; */

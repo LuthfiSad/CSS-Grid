@@ -1,0 +1,34 @@
+/* Special Function & keyword = properti untuk parent atau display grid nya */
+
+/* Special Function & keyword terdiri dari = */
+/* repeat() */
+/* min-content & max-content */
+/* auto-fill & auto fit */
+/* minmax() */
+
+/* Latihan 1 */
+/* repeat() = menentukan ukuran grid track secara berulang, tanpa nulis 1 per 1, contoh penerapanya = */
+/* grid-template-columns: repeat(9, 1fr); */
+
+
+/* Latihan 2 */
+/* min-content & max-content = untuk menentukan besar ukuran grid track berdasarkan content / text pada sebuah item */
+/* min-content = akan mengambil 1 kata saja, dan kata terpanjang akan menjadi ukuran pada grid track nya */
+/* contoh = grid-template-columns: 1fr min-content 1fr; */
+/* max-content = akan mengambil semua kata dan menjadikan 1 baris kata untuk ukuran pada grid track nya  */
+/* grid-template-columns: 1fr max-content 1fr; */
+
+
+/* Latihan 3 */
+/* auto-fill & auto fit = untuk menentukan jumlah item secara responsive, jisa parent widthnya tidak cukup items / child nya akan auto kebawah
+biasanya digunakan didalam nilai repeat() */
+/* auto-fill = besar gridnya akan memenuhi container / parent, walaupun ada item yang kosong */
+/* grid-template-columns: repeat(auto-fill, 100px); */
+/* auto fit = besar gridnya akan menesuaikan item yang ada */
+/* grid-template-columns: repeat(auto-fit, 100px); */
+
+
+/* Latihan 4 */
+/* minmax() = untuk menentukan ukuran minimal dan maximal dari grid track */
+/* kalau misalkan bisa maximal, maka pakai value maximal, ketika ukuran kecil maka grid track nya kurangin sampai batas minimal nya */
+

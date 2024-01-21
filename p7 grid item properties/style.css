@@ -1,0 +1,64 @@
+/* grid item properties = properti untuk item atau isi grid nya */
+/* grid item properties terdiri dari = */
+/* grid-column-start */
+/* grid-column-end */
+/* grid-row-start */
+/* grid-row-end */
+/* grid-column */
+/* grid-row */
+/* grid-area */
+/* justify-self */
+/* align-self */
+/* place-self */
+
+/* Latihan 1 */
+/* grid-column-start, grid-column-end, grid-row-start, grid-row-end = 
+menentukan tempat dan grid item dengan mengacu pada nomor atau name grid line yang spesifik, valuenya =
+grid-column-start: number, name, span number, span name, auto
+number, name = akan mengacu pada nomor dan name yang kita berikan pada grid line
+span number = item akan memanjang / melebar sampai sejumlah nomor
+span name = item akan memanjang / melebar sampai kename grid line tertentu
+*/
+
+/* Latihan 2 */
+/* grid-column & grid-row = shorthand untuk start dan end pada grid-column & grid-row, valuenya = 
+grid-column: start(number, name) / end(number, name) || start / span value;
+*/
+
+/* Latihan 3 */
+/* grid-area = /* mendefinisikan value untuk element / item pada grid
+biasanya value nya digunakan untuk properti grid-templete-areas, valuenya = 
+grid-area: nameareas;
+contoh = grid-area: header; */ 
+
+/* Latihan 4 */ 
+/* grid-area pada fungsi lainnya yaitu =  
+bisa digunakan sebagai shorthand untuk grid-column-start & column-end , grid-row-start & row-end
+jika di gunakan untuk shorthand, valuenya =
+grid-area: row-start / column-start / row-end / column-end;
+contoh = grid-area: 1 / 2 / 2 / 4;
+*/
+
+/* Latihan 5 */
+/* justify-self = mengatur posisi item pada sebuah cell terhadap sumbu horizontal, 
+untuk width akan menyesuaikan text / contentnya, valuenya = 
+justify-self: start, end, center, stretch
+stretch = default(akan memenuhi cell, kecuali jika di beri properti width),
+start = kekiri, end = kekanan, center = ketengah 
+*/
+
+/* Latihan 6 */
+/* align-self = mengatur posisi item pada sebuah cell terhadap sumbu vertikal 
+untuk height akan menyesuaikan text / contentnya, valuenya = 
+align-self: start, end, center, stretch
+stretch = default(akan memenuhi cell, kecuali jika di beri properti height),
+start = keatas, end = kebawah, center = ketengah 
+*/
+
+/* Latihan 6 */
+/* place-self = shorthand posisi item pada sebuah cell terhadap sumbu vertikal dan horizontal secara bersamaan
+untuk height, dan width nya akan menyesuaikan text / contentnya, valuenya =
+place-self: center end;
+align-selfnya = center, dan justify-self = end;
+dan jika valuenya sama maka tulis 1 value saja, contoh = 
+place-self: center; */

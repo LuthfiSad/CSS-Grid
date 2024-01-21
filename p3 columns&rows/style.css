@@ -1,0 +1,48 @@
+/* columns & rows = properti untuk parent atau display grid nya */
+
+/* Latihan 1 */
+/* grid-templete-column = untuk mengatur besar kotak setiap column / kolom nya */
+/* grid-templete-rows = untuk mengatur besar kotak setiap rows / baris nya*/
+/* keduanya memiliki value yang sama yaitu =
+grid-templete-column : track-size; || line-name track-size; 
+unitnya :  
+track-size = %, px, auto, dan fr (fraction)
+line-name = nama yang diberikan pada track */
+
+
+/* Latihan 2 */
+/* Implicit & Explicit */
+/* explicit = menuliskan ukuran dari gridnya seperti colomn / rows
+di firefox ditandai dengan garis putus putus */
+/* imlicit = gridnya menentukan secara otomatis sisanya dari kolom / baris yang tidak di tentukan 
+di firefox ditandai dengan titik titik */
+
+/* cara menengani implicit grid = menggunakan =
+grid-auto-colomns / grid-auto-rows =
+untuk mengatur ukuran grid track yang tidak ditulis pada grid-templete (implicit track) */
+/* cara menangani agar column / row memiliki implisit yaitu menggunakan properti grid-auto-flow
+contoh grid-auto-flow dilatihan 3 ! */
+
+
+
+/* Latihan 3 */
+/* grid-auto-flow = untuk mengatur penempatan item / cell 
+value grid-auto-flow : row, column, row dense, column dense
+row = penempatannya secara baris perbaris
+column = penempatannya secara kolom perkolom
+row dense = 
+colimn dense = 
+*/
+
+/* Latihan 4 */
+/* line-name = nama yang diberikan pada track */
+/* contoh line-name = 
+grid-template-columns: [awal] 25% [kolom2] auto [k3] 50px [empat]; */
+
+/* Latihan 5 */
+/* grid values / nilai yang bisa di berikan di grid */
+/* value track size : px, %, auto, dan yang belom idi coba fr */
+/* fr (fraction) = unit responsive untuk grid yang bagus dari pada % */
+/* contoh =
+grid-template-columns: 1fr 3fr 2.5fr;
+perhitungannya di jumlahkan semua nilai fr, lalu di bagi rata sesuai besar total */

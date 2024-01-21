@@ -1,0 +1,11 @@
+/* grid teminology terdiri dari : */
+/* grid container = element pembungkus grid
+penulisannya display:grid */
+/* grid item = element yang berada di dalam gridS */
+/* grid line = garis kolom atau baris yang memisahkan grid beberapa bagian ditandai dengan angka 
+jumlah line lebih dari 1 garis paling akhir */
+/* grid cell =  perpotongan / pertemuan antara baris dan kolom di dalam grid */
+/* grid area = kumpulan lebih dari satu cell yang membentuk kotak */
+/* grid track = ukuran / jarak antara 2 grid line
+baik secara horizontal (kolom) atau vertikal (baris) */
+/* grid gap = jarak antara cell / grid track */
